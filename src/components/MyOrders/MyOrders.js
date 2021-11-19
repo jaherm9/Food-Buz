@@ -7,13 +7,13 @@ const MyOrders = () => {
   const [cancelOrder, setcancelOrder] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/myOrders/${email}`)
+    fetch(`https://devcenter.heroku.com/myOrders/${email}`)
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, [cancelOrder]);
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/cancelOrder/${id}`, {
+    fetch(`https://devcenter.heroku.com/cancelOrder/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

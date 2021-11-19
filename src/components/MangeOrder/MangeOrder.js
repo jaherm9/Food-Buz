@@ -11,14 +11,14 @@ const MangeOrder = () => {
   };
   console.log(status);
   useEffect(() => {
-    fetch("http://localhost:5000/allOrders")
+    fetch("https://devcenter.heroku.com/allOrders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
 
     // const status = "apporved";
   const handleUpdate = (id) => {
-    fetch(`http://localhost:5000/updateStatus/${id}`, {
+    fetch(`https://devcenter.heroku.com/updateStatus/${id}`, {
       method: "PUT",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ status }),
