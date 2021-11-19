@@ -1,0 +1,16 @@
+.admin-area {
+  background: #ac6218;
+  color: white;
+  height: 80vh;
+}
+.admin-container {
+  overflow-x: hidden;
+}
+.admin-menu {
+  list-style: none;
+  cursor: pointer;
+}
+.admin-menu:hover {
+  color: blue;
+  transition: 0.5s;
+}

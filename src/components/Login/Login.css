@@ -1,0 +1,11 @@
+.box {
+  width: 250px;
+  height: 200px;
+}
+body{
+  background-image: url('https://i.ibb.co/YRFjZJz/signup-bg.png');
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 80vh;
+}
